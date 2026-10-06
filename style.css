@@ -163,7 +163,7 @@ section {
   color: #ffd37a;
 }
 
-/* ===== Главы ===== */
+
 .chapter-card {
   background: #241b47;
   border-radius: 15px;
@@ -191,7 +191,7 @@ section {
   align-self: flex-start;
 }
 
-/* ===== Аккордеон ===== */
+
 .accordion-button {
   background: #2f2459;
   color: #f1e9ff;
