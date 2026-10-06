@@ -1,0 +1,296 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 64px;
+  background: #15112b;
+  color: #f1e9ff;
+  font-family: 'Nunito', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+a {
+  color: #ff9ec4;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.alt {
+  background: #241b47;
+}
+
+
+.site-nav {
+  background: #15112b;
+  border-bottom: 1px solid #3a2f66;
+}
+
+.site-nav .navbar-brand {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 700;
+  color: #ff9ec4;
+}
+
+.site-nav .nav-link {
+  color: #f1e9ff;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+  color: #ff9ec4;
+}
+
+
+.hero {
+  min-height: 80vh;
+  display: flex;               
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(21, 17, 43, 0.6), #15112b),
+              url('https://cover.imglib.info/uploads/cover/kkum-eseo-jayulo/background/kyt0hpKT2DdP');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.sub {
+  color: #b9acd9;
+  font-size: 1.1rem;
+}
+
+
+.btn-dream {
+  display: inline-block;
+  background: #ff9ec4;
+  color: #1a1230;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-dream:hover {
+  background: #ffd37a;
+  color: #1a1230;
+}
+
+.btn-ghost {
+  display: inline-block;
+  border: 1px solid #ff9ec4;
+  color: #ff9ec4;
+  padding: 8px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn-ghost:hover {
+  background: #ff9ec4;
+  color: #1a1230;
+}
+
+
+.cover {
+  border-radius: 15px;
+}
+
+.facts {
+  display: flex;               
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.facts span {
+  background: #2f2459;
+  border-radius: 20px;
+  padding: 3px 14px;
+  font-size: 0.9rem;
+}
+
+
+.characters-grid {
+  display: grid;
+  grid-template-columns: 1fr;  
+  gap: 20px;
+}
+
+.character-card {
+  background: #2f2459;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.character-card:hover {
+  background: #3b2d70;         
+}
+
+.character-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  filter: grayscale(100%);     
+}
+
+.character-card:hover img {
+  filter: grayscale(0%);       
+}
+
+.role {
+  color: #ffd37a;
+}
+
+/* ===== Главы ===== */
+.chapter-card {
+  background: #241b47;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chapter-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.chapter-card .body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.chapter-card .btn-ghost {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* ===== Аккордеон ===== */
+.accordion-button {
+  background: #2f2459;
+  color: #f1e9ff;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #3b2d70;
+  color: #ffd37a;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-body {
+  background: #241b47;
+  color: #f1e9ff;
+}
+
+.quote {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.quote small {
+  color: #ffd37a;
+}
+
+.dream-form {
+  background: #15112b;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.dream-form .form-control {
+  background: #2f2459;
+  color: #f1e9ff;
+  border: 1px solid #3a2f66;
+}
+
+
+.page-hero {
+  padding: 60px 0 20px;
+  text-align: center;
+}
+
+.worlds {
+  display: flex;               
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.worlds article {
+  flex: 1 1 280px;
+  background: #241b47;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+
+footer {
+  background: #241b47;
+  color: #b9acd9;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.9rem;
+}
+
+
+@media (min-width: 768px) {
+  .characters-grid {
+    grid-template-columns: repeat(2, 1fr);  
+  }
+
+  .character-card img {
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  section {
+    padding: 70px 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .characters-grid {
+    grid-template-columns: repeat(4, 1fr);   
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+}
